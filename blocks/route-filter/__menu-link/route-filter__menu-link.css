@@ -1,0 +1,13 @@
+.route-filter__menu-link {
+    margin: 0;
+    padding: 0 20px 13px;
+    text-decoration: none;
+    border-bottom: 2px solid #D4D4D4;
+    box-sizing: border-box;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #282828;
+}

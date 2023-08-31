@@ -1,0 +1,12 @@
+.division {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1180px) {
+    .division {
+        max-width: 800px;
+    }
+}

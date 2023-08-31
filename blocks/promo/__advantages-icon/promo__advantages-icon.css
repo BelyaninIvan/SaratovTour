@@ -1,0 +1,9 @@
+.promo__advantages-icon {
+    display: block;
+    margin: 0 auto;
+
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+
+}

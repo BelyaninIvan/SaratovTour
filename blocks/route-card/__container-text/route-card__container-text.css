@@ -1,0 +1,12 @@
+.route-card__container-text {
+    padding: 27px 43px 27px 0;
+}
+
+@media screen and (max-width: 490px) {
+    .route-card__container-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+}

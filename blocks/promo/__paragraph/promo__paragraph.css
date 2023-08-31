@@ -1,0 +1,18 @@
+.promo__paragraph {
+    margin: 0;
+    padding: 0;
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #2B2A28;
+}
+
+@media screen and (max-width: 1180px) {
+    .promo__paragraph {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

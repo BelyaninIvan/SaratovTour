@@ -1,0 +1,14 @@
+.catalog__item-link {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    color: #CB8734;
+}

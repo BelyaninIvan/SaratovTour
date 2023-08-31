@@ -1,0 +1,14 @@
+.route-filter__place-filter-after {
+    position: relative;
+}
+
+.route-filter__place-filter-after::after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background-image: url('../../../image/place.svg');
+    width: 15px;
+    height: 18px;
+    background-size: 15px 18px;
+}

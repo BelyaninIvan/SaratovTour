@@ -1,0 +1,4 @@
+.route-filter__menu-link_active {
+    color: #CB8734;
+    border-bottom: 2px solid #F39C32;
+}

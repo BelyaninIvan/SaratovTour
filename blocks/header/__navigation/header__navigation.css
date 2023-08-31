@@ -1,0 +1,13 @@
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 810px) {
+    .header__navigation {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+    }
+}

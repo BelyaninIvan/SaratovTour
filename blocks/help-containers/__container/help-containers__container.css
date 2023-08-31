@@ -1,0 +1,8 @@
+.help-containers__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 20px;
+}

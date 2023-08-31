@@ -1,0 +1,24 @@
+.catalog__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    max-width: 750px;
+    row-gap: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1180px) {
+    .catalog__list {
+        justify-content: flex-start;
+        column-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .catalog__list {
+        justify-content: center;
+    }
+}

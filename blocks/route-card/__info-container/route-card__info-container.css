@@ -1,0 +1,11 @@
+.route-card__info-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    column-gap: 35px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F39C32;
+}

@@ -1,0 +1,10 @@
+.catalog__item-title {
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: #2B2A28;
+}

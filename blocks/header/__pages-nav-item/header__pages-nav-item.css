@@ -1,0 +1,20 @@
+.header__pages-nav-item {
+    position: relative;
+}
+
+.header__pages-nav-item::before {
+    content: '';
+    position: absolute;
+    left: -45px;
+    bottom: 50%;
+    transform: translateY(50%);
+    height: 52px;
+    opacity: 0.4;
+    background-color: #E5EBF2;
+    border: 1px dashed #E5EBF2;
+    box-sizing: border-box;
+}
+
+.header__pages-nav-item:first-child:before {
+    content: none;
+}

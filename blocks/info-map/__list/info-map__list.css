@@ -1,0 +1,33 @@
+.info-map__list {
+    margin: 63px 0 80px;
+    padding: 0;
+    list-style-type: none;
+    max-width: 1180px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 540px);
+    gap: 67px 100px;
+}
+
+@media screen and (max-width: 1180px) {
+    .info-map__list {
+        grid-template-columns: repeat(auto-fit, 375px);
+        gap: 50px 50px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .info-map__list {
+        grid-template-columns: 400px;
+        gap: 50px 0px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .info-map__list {
+        grid-template-columns: 310px;
+        gap: 50px 0px;
+        justify-content: center;
+    }
+}

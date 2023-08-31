@@ -1,0 +1,20 @@
+.division__item-list-product {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #2B2A28;
+}
+
+.division__item-list-product::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -13px;
+    width: 5px;
+    height: 15px;
+    background-image: url('../../../image/list-arrow.svg');
+    background-size: 5px 15px;
+}

@@ -1,0 +1,11 @@
+.route-page__description-container {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+@media screen and (max-width: 950px) {
+    .route-page__description-container {
+        flex-direction: column;
+    }
+}

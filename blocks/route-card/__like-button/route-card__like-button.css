@@ -1,0 +1,16 @@
+.route-card__like-button {
+    margin: 0;
+    padding: 8px;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+
+    background: #EDEDED;
+    border-radius: 50%;
+
+    background-image: url('../../../image/heart.svg');
+    background-size: 20px 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

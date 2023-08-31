@@ -1,0 +1,8 @@
+.route-page__description {
+    box-sizing: border-box;
+    padding: 10px 25px;
+    margin-bottom: 40px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 25px #E7D8C7;
+    border-radius: 40px;
+}

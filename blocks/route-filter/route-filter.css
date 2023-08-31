@@ -1,0 +1,32 @@
+.route-filter {
+    margin: 0 auto;
+    padding: 60px;
+    margin-top: 100px;
+    max-width: 1180px;
+    box-sizing: border-box;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .route-filter {
+        padding: 20px;
+        max-width: 920px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .route-filter {
+        padding: 20px;
+        max-width: 560px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .route-filter {
+        padding: 10px;
+        max-width: 300px;
+    }
+}

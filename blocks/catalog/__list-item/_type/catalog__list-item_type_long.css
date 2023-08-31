@@ -1,0 +1,23 @@
+.catalog__list-item_type_long {
+    max-width: 740px;
+    width: 100%;
+    padding-bottom: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1180px) {
+    .catalog__list-item_type_long {
+        max-width: 610px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .catalog__list-item_type_long {
+        max-width: 275px;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,7 @@
+.route-card__button-container {
+    margin-top: 20px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}

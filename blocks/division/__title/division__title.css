@@ -1,0 +1,19 @@
+.division__title {
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #2B2A28;
+}
+
+@media screen and (max-width: 810px) {
+    .division__title {
+        margin: 0 auto;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+    }
+}

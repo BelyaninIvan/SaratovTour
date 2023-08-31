@@ -1,0 +1,11 @@
+.form__label {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    display: block;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2B2A28;
+}

@@ -1,0 +1,5 @@
+.form__button {
+    display: block;
+    margin: 0 auto;
+    min-width: 110px;
+}

@@ -1,0 +1,19 @@
+.carousel__item-image {
+    max-width: 1180px;
+    height: 520px;
+    border-radius: 0 100px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 810px) {
+    .carousel__item-image {
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .carousel__item-image {
+        height: 200px;
+        border-radius: 0 40px;
+    }
+}

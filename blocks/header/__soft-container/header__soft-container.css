@@ -1,0 +1,14 @@
+.header__soft-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    column-gap: 40px;
+}
+
+@media screen and (max-width: 810px) {
+    .header__soft-container {
+        flex-direction: column-reverse;
+        row-gap: 15px;
+    }
+}

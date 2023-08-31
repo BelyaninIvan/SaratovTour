@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../libs/jquery/jquery-3.2.1.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css'/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js'></script>
+    <link rel="stylesheet" href="../style/index.css" />
+    <script type="text/javascript" src="../dist/graphhopper-client.js?v=0.9.0-4"></script>
+    <!-- map matching currently needs togeojson.js -->
+    <script type="text/javascript" src="../js/togeojson.js"></script>
+    <script src="https://rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js"></script>
+    <title>Маршруты</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__container">
+                <a href="#" class="header__logo"></a>
+                <div class="header__soft-container">
+                    <div class="header__social-container">
+                        <p class="header__social-text">Связаться напрямую:</p>
+                        <ul class="header__social-list">
+                            <li class="header__social-list-item">
+                                <a href="" class="link header__social-item-link">
+                                    <img src="../image/Telegram.png" alt="Иконка Telegram" class="header__social-icon">
+                                </a>
+                            </li>
+                            <li class="header__social-list-item">
+                                <a href="" class="link header__social-item-link">
+                                    <img src="../image/WhatsApp.png" alt="Иконка WhatsApp" class="header__social-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="button header__button">Скачать приложение</a>
+                </div>
+            </div>
+            <div class="header__navigation">
+                <ul class="header__pages-nav">
+                    <li class="header__pages-nav-item">
+                        <a href="./../index.html" class="link header__pages-nav-link">Главная</a>
+                    </li>
+                    <li class="header__pages-nav-item">
+                        <a href="#" class="link header__pages-nav-link" id="routeListButton">Маршруты</a>
+                    </li>
+                </ul>
+                <ul class="header__info-list">
+                    <li class="header__info-list-item">
+                        <a href="#" class="link header__info-list-link">Отзывы</a>
+                    </li>
+                    <li class="header__info-list-item">
+                        <a href="#" class="link header__info-list-link">Контакты</a>
+                    </li>
+                    <li class="header__info-list-item">
+                        <a href="./auth.html" class="link header__info-list-link">Аккаунт</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main id="route-list">
+            <section class="route-filter">
+                <ul class="route-filter__menu">
+                    <li class="route-filter__menu-item">
+                        <a href="#" class="link route-filter__menu-link route-filter__menu-link_active">Все маршруты</a>
+                    </li>
+                    <li class="route-filter__menu-item">
+                        <a href="#" class="link route-filter__menu-link">Избранное</a>
+                    </li>
+                    <li class="route-filter__menu-item">
+                        <a href="#" class="link route-filter__menu-link" id="createRoute">Мои маршруты</a>
+                    </li>
+                </ul>
+                <form action="" class="route-filter__filter-container" name="filter">
+                    <div class="route-filter__place-filter-after">
+                        <select class="filter-field route-filter__place-filter">
+                            <option value="" class="route-filter__place-filter-item">Саратов</option>
+                            <option value="" class="route-filter__place-filter-item">Энгельс</option>
+                            <option value="" class="route-filter__place-filter-item">Балаково</option>
+                            <option value="" class="route-filter__place-filter-item">Вольск</option>
+                        </select>
+                    </div>
+                    <input type="date" class="filter-field route-filter__date-filter" name="date-filter">
+                    <div class="route-filter__people-filter-after">
+                        <select class="filter-field route-filter__people-filter">
+                            <option value="" class="route-filter__people-filter-item">1 человек</option>
+                            <option value="" class="route-filter__people-filter-item">2 человека</option>
+                            <option value="" class="route-filter__people-filter-item">3 человека</option>
+                            <option value="" class="route-filter__people-filter-item">4 человека</option>
+                        </select>
+                    </div>
+                    <button class="button route-filter__button" type="button">Показать</button>
+                </form>
+            </section>
+            <section class="route">
+                <h1 class="route__title">
+                    Наши маршруты
+                </h1>
+                <article class="route-card">
+                    <img src="./../image/promo-image.png" alt="Фото города Саратова" class="route-card__img">
+                    <div class="route-card__container-text">
+                        <p class="route-card__route-type">Пеший маршрут</p>
+                        <h2 class="route-card__title">Пешеходное кольцо по центру города</h2>
+                        <div class="route-card__info-container">
+                            <p class="route-card__price">от 150&#8381; <span class="route-card__price-span">На&nbsp;одного</span></p>
+                            <p class="route-card__time">от 2,5 часов</p>
+                        </div>
+                        <p class="route-card__description">Прекрасный пешеходный маршрут по красивым и благоустроенным пешеходным зонам в самом центре города Саратова. Маршрут предоставляет возможность изучить сердце города и познакомиться с важными для истории города достопримечательностями.</p>
+                        <div class="route-card__button-container">
+                            <button class="button route-card__button" type="button" id="pedestrian-ring-route">Подробнее</button>
+                            <button class="route-card__like-button" type="button"></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="route-card">
+                    <img src="./../image/promo-image.png" alt="Фото города Саратова" class="route-card__img">
+                    <div class="route-card__container-text">
+                        <p class="route-card__route-type">Пеший маршрут</p>
+                        <h2 class="route-card__title">Прогулка по центру города Саратова</h2>
+                        <div class="route-card__info-container">
+                            <p class="route-card__price">1500₽ <span class="route-card__price-span">На&nbsp;одного</span></p>
+                            <p class="route-card__time">2,5 часа</p>
+                        </div>
+                        <p class="route-card__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel molestias, nostrum hic vero sed culpa officia obcaecati error ipsam quis distinctio impedit ipsum eaque saepe, sunt minus similique iure adipisci.</p>
+                        <div class="route-card__button-container">
+                            <button class="button route-card__button" type="button">Подробнее</button>
+                            <button class="route-card__like-button" type="button"></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="route-card">
+                    <img src="./../image/promo-image.png" alt="Фото города Саратова" class="route-card__img">
+                    <div class="route-card__container-text">
+                        <p class="route-card__route-type">Пеший маршрут</p>
+                        <h2 class="route-card__title">Прогулка по центру города Саратова</h2>
+                        <div class="route-card__info-container">
+                            <p class="route-card__price">1500₽ <span class="route-card__price-span">На&nbsp;одного</span></p>
+                            <p class="route-card__time">2,5 часа</p>
+                        </div>
+                        <p class="route-card__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel molestias, nostrum hic vero sed culpa officia obcaecati error ipsam quis distinctio impedit ipsum eaque saepe, sunt minus similique iure adipisci.</p>
+                        <div class="route-card__button-container">
+                            <button class="button route-card__button" type="button">Подробнее</button>
+                            <button class="route-card__like-button" type="button"></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="route-card">
+                    <img src="./../image/promo-image.png" alt="Фото города Саратова" class="route-card__img">
+                    <div class="route-card__container-text">
+                        <p class="route-card__route-type">Пеший маршрут</p>
+                        <h2 class="route-card__title">Прогулка по центру города Саратова</h2>
+                        <div class="route-card__info-container">
+                            <p class="route-card__price">1500₽ <span class="route-card__price-span">На&nbsp;одного</span></p>
+                            <p class="route-card__time">2,5 часа</p>
+                        </div>
+                        <p class="route-card__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel molestias, nostrum hic vero sed culpa officia obcaecati error ipsam quis distinctio impedit ipsum eaque saepe, sunt minus similique iure adipisci.</p>
+                        <div class="route-card__button-container">
+                            <button class="button route-card__button" type="button">Подробнее</button>
+                            <button class="route-card__like-button" type="button"></button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="create-route">
+                <button class="create-route__add-route button" type="button">Создать новый маршрут</button>
+                <form action="" class="form create-route__form" name="roatingCreate">
+                    <label for="name" class="form__label">Назовите свой маршрут:</label>
+                    <input type="text" name="name" id="" class="form__input">
+                    <label for="startPoint" class="form__label">Стартовая точка маршрута:</label>
+                    <input type="text" name="startPoint" id="start" class="form__input">
+                    <label for="endPoint" class="form__label">Конечная точка маршрута:</label>
+                    <input type="text" name="endPoint" id="end" class="form__input">
+                    <div class="form__button-container">
+                        <button class="button create-route__button" type="button" id="roatingCreateCafe">Добавить кафе</button>
+                        <button class="button create-route__button" type="button" id="roatingCreateVehicle">Добавить транспорт</button>
+                        <button class="button create-route__button" type="button" id="roatingCreateFamous">Добавить достопримечательность</button>
+                    </div>
+                    <button class="button create-route__form-submit" type="submit" id="roatingCreateSubmit">Показать</button>
+                </form>
+
+                <div id="create-route__map" class="create-route__map"></div>
+
+                <div class="help-containers add-help-containers">
+                    
+                    <div class="add-restaurants-container hidden">
+                        <h2 class="route-page__description-title">Добавленные вами рестораны:</h2>
+                        <div class="help-containers__container">
+
+                        </div>
+                    </div>
+                    
+                    <div class="help-containers__container add-vichile-container hidden">
+                        <h2 class="route-page__description-title">Добавленный вами транспорт:</h2>
+                        
+                    </div>
+                    <div class="help-containers__container add-famous-container hidden">
+                        <h2 class="route-page__description-title">Добавленные вами достопримечательности:</h2>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="modal modal_cafe">
+            <div class="modal__block" id="addCafe">
+                <button class="modal__button-close" type="button"></button>
+                <form action="" name="addCafe" class="modal__form">
+                    <label for="cafeImg" class="form__label">Введите ссылку на изображение:</label>
+                    <input type="text" name="cafeImg" id="" class="form__input">
+                    <label for="cafeName" class="form__label">Введите название ресторана:</label>
+                    <input type="text" name="cafeName" id="" class="form__input">
+                    <label for="kitchenType" class="form__label">Введите тип кухни ресторана:</label>
+                    <input type="text" name="kitchenType" id="" class="form__input">
+                    <label for="middlePrice" class="form__label">Введите среднюю стоимость чека:</label>
+                    <input type="number" name="middlePrice" id="" class="form__input" min="0">
+                    <label for="coordCafe" class="form__label">Введите координаты ресторана:</label>
+                    <input type="text" name="coordCafe" id="" class="form__input">
+                    <button class="button create-route__button" type="submit" id="roatingAddCafe">Добавить</button>
+                </form>
+            </div>
+        </div>
+        <main class="hidden" id="main">
+            <section class="route-page">
+                <h1 class="route-page__title">Пешеходное кольцо по центру города</h1>
+                <ul class="route-page__menu">
+                    <li class="route-page__menu-item">
+                        <button class="route-page__button button" id="watch-info">Описание маршрута</button>
+                    </li>
+                    <li class="route-page__menu-item">
+                        <button class="route-page__button button" id="watch-route">Начать прохождение</button>
+                    </li>
+                </ul>
+                <div class="route-page__description hidden">
+                    <h2 class="route-page__description-title">Описание маршрута</h2>
+                    <div class="route-page__description-container">
+                        <p class="route-page__description-text">
+                            В Саратове после завершения реконструкции старой части набережной создана самая большая пешеходная зона в Европе, ее длина составила 8 км.
+                        </p>
+                        <p class="route-page__description-text">
+                            «Пешеходное кольцо связывает историческую часть города, 3-километровую набережную и новый пляж, городской парк, сквер на улице Рахова, площадь и проспект Кирова, а также улицу Волжскую».
+                        </p>
+                        <p class="route-page__description-text">
+                            Гуляя по данному маршруту, вы можете увидеть самое сердце города Саратова, а именно основные достопримечательности, памятники известным людям, которые вносили свой вклад в историю Города, красивые пешеходные зоны и уникальные здания и парки.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-map">
+                <div id="routing" class="tab-content section-map__content">
+                    
+                    <div class="section-map__map" id="routing-map"></div>
+
+                    <div class="button-list hidden">
+                        <button type="button" class="button" id="see-restaurants">Посмотреть рестораны</button>
+                        
+                        <button type="button" class="button" id="see-vechile">Посмотреть транспорт</button>
+                        
+                        <button type="button" class="button" id="see-famous">Посмотреть достопримечательности</button>
+                        
+                        
+                    </div>
+                </div>
+                
+                <div class="help-containers">
+                    <div class="help-containers__container restaurants-container">
+                        
+                    </div>
+                    
+                    <div class="help-containers__container vichile-container">
+                        
+                    </div>
+                    <div class="help-containers__container famous-container">
+                        
+                    </div>
+                    <button class="button hidden" id="close-button">Назад</button>
+                </div>
+
+                <template id="restaurants">
+                    <div class="card">
+                        <img src="" alt="" class="card__img">
+                        <h2 class="card__title"></h2>
+                        <p class="card__kitchen-type"></p>
+                        <p class="card__middle-price"></p>
+                    </div>       
+                </template>
+                <template id="vechile">
+                    <div class="card">
+                        <img src="" alt="" class="card__img">
+                        <h2 class="card__title"></h2>
+                        <button class="button hidden" type="button" id="watch-vechile"></button>
+                    </div>       
+                </template>
+                <template id="famous">
+                    <div class="card card_famous">
+                        <img src="" alt="" class="card__img">
+                        <h2 class="card__title"></h2>
+                        <p class="card__description"></p>
+                        <button class="button" type="button" id="watch-famous">Найти на карте</button>
+                    </div>       
+                </template>
+
+                
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__navigation">
+                <ul class="footer__pages-nav">
+                    <li class="footer__pages-nav-item">
+                        <a href="./../index.html" class="link footer__pages-nav-link">Главная</a>
+                    </li>
+                    <li class="footer__pages-nav-item">
+                        <a href="#" class="link footer__pages-nav-link">Маршруты</a>
+                    </li>
+                    <li class="footer__pages-nav-item">
+                        <a href="#" class="link footer__pages-nav-link">Инструкция</a>
+                    </li>
+                </ul>
+                <ul class="footer__info-list">
+                    <li class="footer__info-list-item">
+                        <a href="#" class="link footer__info-list-link">Отзывы</a>
+                    </li>
+                    <li class="footer__info-list-item">
+                        <a href="#" class="link footer__info-list-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer__copyright">© 2022. Все права защищены. </p>
+        </footer> 
+    </div>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/readyRoute.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.route-filter__date-filter {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.route-filter__date-filter::-webkit-calendar-picker-indicator { 
+    color: orange; 
+}

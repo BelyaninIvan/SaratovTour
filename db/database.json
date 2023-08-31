@@ -1,0 +1,281 @@
+{
+    "polygon1": {
+        "restaurants":
+        [{
+            "img": "../image/pedastrian-ring/polygon1/veterok.jpg",
+            "name": "Ветерок",
+            "kitchen": "Европейская, грузинская",
+            "middlePrice": "от 1000руб.",
+            "coordinates": [51.518583, 45.999653]
+        },
+        {
+            "img": "../image/pedastrian-ring/polygon1/kulinar.jpg",
+            "name": "Ларьки в парке",
+            "kitchen": "Фаст-фуд",
+            "middlePrice": "от 250руб.",
+            "coordinates": [51.51760,45.99962]
+        },
+        {
+            "img": "../image/pedastrian-ring/polygon1/bk.jpg",
+            "name": "Бургер Кинг",
+            "kitchen": "Фаст-фуд",
+            "middlePrice": "от 300руб.",
+            "coordinates": [51.515838, 46.004241]
+        }
+        ],
+        "vechile": 
+        [{
+            "type": "Свои ножки",
+            "img": "../image/pedastrian-ring/walk.jpg"
+        }
+        ],
+        "famousPlace": 
+        [{
+            "name": "Окунитесь в сказку 'Лукоморье'",
+            "img": "../image/pedastrian-ring/polygon1/baba_yaga.jpg",
+            "description": "На всей территории парка можно встретить множество деревянных фигур из самых известных сказок.",
+            "place": 
+            [{
+                "name": "Русалка",
+                "coordinates": [51.51943,45.99914]
+            },
+            {
+                "name": "Кот ученый",
+                "coordinates": [51.51842,45.99727] 
+            },
+            {
+                "name": "Избушка Бабы Яги",
+                "coordinates": [51.51876,45.99775] 
+            },
+            {
+                "name": "Золотая рыбка",
+                "coordinates": [51.51719,45.99891]
+            }]
+        },
+        {
+            "name": "Испытайте невероятные эмоции",
+            "img": "../image/pedastrian-ring/polygon1/attraction.jpeg",
+            "description": "В парке, посетитель любого возраста сможет получить невероятные эмоции от посещения аттракционов.",
+            "place": 
+            [{
+                "name": "Основные аттракционы",
+                "coordinates": [51.51661,45.99914]
+            },
+            {
+                "name": "Детские аттракционы",
+                "coordinates": [51.51691,46.00045]
+            }]
+        },
+        {
+            "name": "Наслаждайтесь природой",
+            "img": "../image/pedastrian-ring/polygon1/nature.jpg",
+            "description": "Вы увидите красивые водоемы, огромные деревья, и прекрасными обитателями парка.",
+            "place": 
+            [{
+                "name": "Водоем с утками",
+                "coordinates": [51.51824,46.00070]
+            },
+            {
+                "name": "Водоем с белыми лебедями",
+                "coordinates": [51.51987,45.99902] 
+            },
+            {
+                "name": "Водоем с чайкой, лебедями и уточками",
+                "coordinates": [51.51913,45.99752] 
+            },
+            {
+                "name": "Место обитания белочек",
+                "coordinates": [51.51819,45.99717]
+            }
+            ]
+        }
+        ]
+    },
+    "polygon2":{
+        "restaurants":
+        [{
+            "img": "../image/pedastrian-ring/polygon2/pizza.jpg",
+            "name": "Мастер пицца",
+            "kitchen": "Европейская, пиццерия",
+            "middlePrice": "от 500руб.",
+            "coordinates": [51.521431, 46.003031]
+        },
+        {
+            "img": "../image/pedastrian-ring/polygon2/klausberg.jpg",
+            "name": "Klausberg",
+            "kitchen": "Бар",
+            "middlePrice": "от 1000руб.",
+            "coordinates": [51.523913, 46.008906]
+        },
+        {
+            "img": "../image/pedastrian-ring/polygon2/malina.jpg",
+            "name": "Кондитерская Малина",
+            "kitchen": "Кондитерская",
+            "middlePrice": "от 150руб.",
+            "coordinates": [51.524956, 46.008466]
+        },
+        {
+            "img": "../image/pedastrian-ring/polygon2/matreshka.jpg",
+            "name": "Матрешка",
+            "kitchen": "Русская кухня",
+            "middlePrice": "от 500руб.",
+            "coordinates": [51.526906, 46.010631]
+        }
+        ],
+        "vechile": 
+        [{
+            "type": "Свои ножки",
+            "img": "../image/pedastrian-ring/walk.jpg",
+            "coordinates": []
+        },
+        {
+            "type": "Велосипед",
+            "img": "../image/pedastrian-ring/velobike.jpg",
+            "service": "Посмотреть прокат",
+            "coordinates": [51.521277, 46.003629]
+        },
+        {
+            "type": "Самокат",
+            "img": "../image/pedastrian-ring/elscooter.jpg",
+            "service": "Посмотреть прокат",
+            "coordinates": [51.52155,46.00451]
+        }
+        ],
+        "famousPlace": 
+        [{
+            "name": "Большая пешеходная зона",
+            "img": "../image/pedastrian-ring/polygon2/street.jpg",
+            "description": "Улица Рахова это лучшая улица для прогулки от городского парка до главной пешеходной улицы города - проспекта Столыпина. Ее вы можете пройти пешком или быстро проехать на велосипеде или самокате по специальной велодорожке."
+        }]
+    },
+    "polygon3":{
+        "restaurants":
+        [{
+            "img": "../image/pedastrian-ring/polygon3/osmi.jpg",
+            "name": "Осьминог",
+            "kitchen": "Морепродукты",
+            "middlePrice": "от 1000руб.",
+            "coordinates": [51.528682, 46.012823]
+        },
+        {
+            "img": "../image/pedastrian-ring/polygon3/corto.jpg",
+            "name": "Corto coffe",
+            "kitchen": "Кофейня",
+            "middlePrice": "от 200руб.",
+            "coordinates": [51.530746, 46.013515]
+        },
+        {
+            "img": "../image/pedastrian-ring/polygon3/xleb.jpg",
+            "name": "Хлебница",
+            "kitchen": "Пекарня",
+            "middlePrice": "от 150руб.",
+            "coordinates": [51.530994, 46.014014]
+        }
+        ],
+        "vechile": 
+        [{
+            "type": "Свои ножки",
+            "img": "../image/pedastrian-ring/walk.jpg",
+            "coordinates": []
+        },
+        {
+            "type": "Велосипед",
+            "img": "../image/pedastrian-ring/velobike.jpg"
+        },
+        {
+            "type": "Самокат",
+            "img": "../image/pedastrian-ring/elscooter.jpg"
+        }
+        ],
+        "famousPlace": 
+        [{
+            "name": "Большая пешеходная зона",
+            "img": "../image/pedastrian-ring/polygon2/street.jpg",
+            "description": "Улица Рахова это лучшая улица для прогулки от городского парка до главной пешеходной улицы города - проспекта Столыпина. Ее вы можете пройти пешком или быстро проехать на велосипеде или самокате по специальной велодорожке."
+        }]
+    },
+    "polygon4": {
+        "restaurants":
+        [{
+            "img": "../image/pedastrian-ring/polygon4/vostok.jpg",
+            "name": "Восточный экспресс",
+            "kitchen": "Фаст-фуд",
+            "middlePrice": "от 150руб.",
+            "coordinates": [51.533299, 46.020396]
+        },
+        {
+            "img": "../image/pedastrian-ring/polygon4/tari-bari.jpg",
+            "name": "Тары-Бары",
+            "kitchen": "Русская кухня",
+            "middlePrice": "от 1000руб.",
+            "coordinates": [51.533075, 46.021617]
+        },
+        {
+            "img": "../image/pedastrian-ring/polygon4/stolovaya.jpg",
+            "name": "Столовая №1",
+            "kitchen": "Столовая",
+            "middlePrice": "от 150руб.",
+            "coordinates": [51.532879, 46.021923]
+        }
+        ],
+        "vechile": 
+        [{
+            "type": "Свои ножки",
+            "img": "../image/pedastrian-ring/walk.jpg",
+            "coordinates": []
+        },
+        {
+            "type": "Велосипед",
+            "img": "../image/pedastrian-ring/velobike.jpg",
+            "service": "Посмотреть прокат",
+            "coordinates": []
+        },
+        {
+            "type": "Самокат",
+            "img": "../image/pedastrian-ring/elscooter.jpg",
+            "service": "Посмотреть прокат",
+            "coordinates": [51.53365,46.01775]
+        }
+        ],
+        "famousPlace": 
+        [{
+            "name": "Значимые памятники",
+            "img": "../image/pedastrian-ring/polygon1/baba_yaga.jpg",
+            "description": "На площади Кирова имеется несколько значимых для города памятников.",
+            "place": 
+            [{
+                "name": "Памятник Н.И. Вавилову",
+                "coordinates": [51.53314,46.01799]
+            },
+            {
+                "name": "Памятник братьям Никитиным",
+                "coordinates": [51.51842,45.99727] 
+            }]
+        },
+        {
+            "name": "Уникальный постройки",
+            "img": "../image/pedastrian-ring/polygon1/attraction.jpeg",
+            "description": "Среди уникальных построек на площади Кирова можно увидеть Митрофаниевскую церковь и единственное здание цирка в городе - Цирк братьев Никитиных.",
+            "place": 
+            [{
+                "name": "Митрофаниевская церковь",
+                "coordinates": [51.53260,46.01817]
+            },
+            {
+                "name": "Цирк братьев Никитиных",
+                "coordinates": [51.53381,46.02115]
+            }]
+        },
+        {
+            "name": "Красивейший фонтан",
+            "img": "../image/pedastrian-ring/polygon1/nature.jpg",
+            "description": "Помимо зданий и памятников на площади Кирова можно любоваться фонтаном под названием - одуванчик.",
+            "place": 
+            [{
+                "name": "Фонтан",
+                "coordinates": [51.53331,46.02086]
+            }]
+        }
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+.route-card__description {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    margin-top: 20px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #282828;
+}
+
+.route-card__description::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 100%;
+    border: 3px solid;
+    border-color: #F39C32;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #F39C32;
+}

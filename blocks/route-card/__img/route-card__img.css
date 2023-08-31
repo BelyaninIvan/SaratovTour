@@ -1,0 +1,7 @@
+.route-card__img {
+    display: block;
+    max-width: 240px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}

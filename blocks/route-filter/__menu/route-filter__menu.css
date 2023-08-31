@@ -1,0 +1,16 @@
+.route-filter__menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 570px) {
+    .route-filter__menu {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}

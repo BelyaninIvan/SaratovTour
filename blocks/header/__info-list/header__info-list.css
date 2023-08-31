@@ -1,0 +1,18 @@
+.header__info-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 63px;
+}
+
+@media screen and (max-width: 425px) {
+    .header__info-list {
+        width: 90%;
+        justify-content: space-between;
+        column-gap: normal;
+    }
+}

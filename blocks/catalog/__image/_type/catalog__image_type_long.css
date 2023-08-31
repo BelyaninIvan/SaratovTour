@@ -1,0 +1,12 @@
+.catalog__image_type_long {
+    margin: 0;
+    width: 396px;
+    height: 310px;
+}
+
+@media screen and (max-width: 1180px) {
+    .catalog__image_type_long {
+        width: 275px;
+        height: 189px;
+    }
+}

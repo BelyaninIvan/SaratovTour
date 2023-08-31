@@ -1,0 +1,21 @@
+.catalog {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-top: 75px;
+
+    background: url('../../image/saratov.png') bottom right no-repeat;
+    background-size: 100% 740px;
+}
+
+@media screen and (max-width: 1180px) {
+    .catalog {
+        max-width: 800px;
+        background-size: 100% 620px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .catalog {
+        background: none;
+    }
+}

@@ -1,0 +1,17 @@
+.route-filter__filter-container {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 60px;
+    max-width: 925px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 920px) {
+    .route-filter__filter-container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}

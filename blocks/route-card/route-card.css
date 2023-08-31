@@ -1,0 +1,33 @@
+.route-card {
+    margin-top: 20px;
+    max-width: 780px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 43px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.route-card:first-of-type {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 650px) {
+    .route-card {
+        max-width: 450px;
+        padding: 10px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .route-card {
+        max-width: 300px;
+        padding: 10px;
+        flex-direction: column;
+    }
+}

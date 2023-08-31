@@ -1,0 +1,9 @@
+.route-page__description-text {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 25px #E7D8C7;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 455px;
+}

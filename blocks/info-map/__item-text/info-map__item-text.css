@@ -1,0 +1,11 @@
+.info-map__item-text {
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+    max-width: 450px;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    color: #2B2A28;
+}

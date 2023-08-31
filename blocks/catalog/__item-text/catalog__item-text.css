@@ -1,0 +1,9 @@
+.catalog__item-text {
+    margin: 0 30px;
+}
+
+@media screen and (max-width: 1180px) {
+    .catalog__item-text {
+        margin: 0 10px;
+    }
+}

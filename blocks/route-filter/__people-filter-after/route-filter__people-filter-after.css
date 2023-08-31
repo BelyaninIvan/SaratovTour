@@ -1,0 +1,14 @@
+.route-filter__people-filter-after {
+    position: relative;
+}
+
+.route-filter__people-filter-after::after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background-image: url('../../../image/people.svg');
+    width: 25px;
+    height: 23px;
+    background-size: 25px 23px;
+}

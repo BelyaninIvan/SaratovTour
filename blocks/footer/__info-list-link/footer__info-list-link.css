@@ -1,0 +1,11 @@
+.footer__info-list-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 146.19%;
+    letter-spacing: 0.08em;
+    color: #2B2A28;
+}

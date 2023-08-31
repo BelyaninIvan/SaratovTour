@@ -1,0 +1,12 @@
+.division__item-title {
+    margin: 0 auto;
+    margin-top: 21px;
+    padding: 0;
+    max-width: 280px;
+
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2B2A28;
+    text-align: center;
+}

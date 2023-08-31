@@ -1,0 +1,9 @@
+.card__middle-price {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 28px;
+    color: #2B2A28;
+}

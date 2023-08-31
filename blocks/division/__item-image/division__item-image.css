@@ -1,0 +1,12 @@
+.division__item-image {
+    width: 310px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 0px 36px;
+}
+
+@media screen and (max-width: 425px) {
+    .division__item-image {
+        height: 200px;
+    }
+}

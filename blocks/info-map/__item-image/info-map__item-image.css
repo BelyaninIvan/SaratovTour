@@ -1,0 +1,9 @@
+.info-map__item-image {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+
+    position: absolute;
+    right: 25px;
+    top: -34px;
+}
